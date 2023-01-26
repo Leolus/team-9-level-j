@@ -29,19 +29,19 @@ public class GameMap {
         int calculatedX = startingPosition.coordinates.x;
         int calculatedY = startingPosition.coordinates.y;
 
-        if(direction.equals(DIRECTION.NORTH)){
+        if(direction.equals(DIRECTION.N)){
           //  calculatedY = calculatedY + 1;
               calculatedX = calculatedX - 1;
         }
-        if(direction.equals(DIRECTION.SOUTH)){
+        if(direction.equals(DIRECTION.S)){
           //  calculatedY = calculatedY - 1;
               calculatedX = calculatedX + 1;
         }
-        if (direction.equals(DIRECTION.WEST)) {
+        if (direction.equals(DIRECTION.W)) {
          //   calculatedX = calculatedX - 1;
               calculatedY = calculatedY - 1;
         }
-        if (direction.equals(DIRECTION.EAST)) {
+        if (direction.equals(DIRECTION.E)) {
            // calculatedX = calculatedX + 1;
               calculatedY = calculatedY + 1;
         }

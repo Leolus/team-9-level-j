@@ -25,7 +25,7 @@ public class GameController {
 
     // TODO: Ensure this AND CLI commands match domain model
     public static enum DIRECTION {
-        NORTH, SOUTH, EAST, WEST
+        N, S, E, W
     }
 
     public void createCharacter(String name) {

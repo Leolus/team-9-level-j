@@ -34,7 +34,7 @@ public class GameMapTest {
         Position startingPosition = testObj.getPositions()[1][2];
         //Point expectedEndPositionCoordinates = new Point(1,3);
         Point expectedEndPositionCoordinates = new Point(0,2);
-        GameController.DIRECTION direction = GameController.DIRECTION.NORTH;
+        GameController.DIRECTION direction = GameController.DIRECTION.N;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
 
@@ -48,7 +48,7 @@ public class GameMapTest {
         Position startingPosition = testObj.getPositions()[1][2];
         //Point expectedEndPositionCoordinates = new Point(1, 1);
         Point expectedEndPositionCoordinates = new Point(2, 1);
-        GameController.DIRECTION direction = GameController.DIRECTION.SOUTH;
+        GameController.DIRECTION direction = GameController.DIRECTION.S;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
 
@@ -62,7 +62,7 @@ public class GameMapTest {
         Position startingPosition = testObj.getPositions()[1][2];
         //Point expectedEndPositionCoordinates = new Point(0, 2);
         Point expectedEndPositionCoordinates = new Point(1, 1);
-        GameController.DIRECTION direction = GameController.DIRECTION.WEST;
+        GameController.DIRECTION direction = GameController.DIRECTION.W;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
 
@@ -76,7 +76,7 @@ public class GameMapTest {
         Position startingPosition = testObj.getPositions()[1][2];
         //Point expectedEndPositionCoordinates = new Point(2, 2);
         Point expectedEndPositionCoordinates = new Point(1, 3);
-        GameController.DIRECTION direction = GameController.DIRECTION.EAST;
+        GameController.DIRECTION direction = GameController.DIRECTION.E;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
 
@@ -91,7 +91,7 @@ public class GameMapTest {
         Position startingPosition = testObj.getPositions()[0][5];
         //Point expectedEndPositionCoordinates = new Point(2, 9);
         Point expectedEndPositionCoordinates = new Point(0, 5);
-        GameController.DIRECTION direction = GameController.DIRECTION.NORTH;
+        GameController.DIRECTION direction = GameController.DIRECTION.N;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
 
@@ -106,7 +106,7 @@ public class GameMapTest {
         Position startingPosition = testObj.getPositions()[9][2];
         //Point expectedEndPositionCoordinates = new Point(2, 0);
         Point expectedEndPositionCoordinates = new Point(9, 2);
-        GameController.DIRECTION direction = GameController.DIRECTION.SOUTH;
+        GameController.DIRECTION direction = GameController.DIRECTION.S;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
 
@@ -121,7 +121,7 @@ public class GameMapTest {
         Position startingPosition = testObj.getPositions()[5][0];
         //Point expectedEndPositionCoordinates = new Point(0, 5);
         Point expectedEndPositionCoordinates = new Point(5, 0);
-        GameController.DIRECTION direction = GameController.DIRECTION.WEST;
+        GameController.DIRECTION direction = GameController.DIRECTION.W;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
 
@@ -136,7 +136,7 @@ public class GameMapTest {
         Position startingPosition = testObj.getPositions()[3][9];
         //Point expectedEndPositionCoordinates = new Point(9, 3);
         Point expectedEndPositionCoordinates = new Point(3, 9);
-        GameController.DIRECTION direction = GameController.DIRECTION.EAST;
+        GameController.DIRECTION direction = GameController.DIRECTION.E;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
 

@@ -49,28 +49,28 @@ public class LevelUpGame implements Quit.Command {
   @ShellMethod(value = "Move North", key = { "N", "n" }, group = "Move")
   @ShellMethodAvailability("startedCheck")
   public void moveNorth() {
-    gameController.move(GameController.DIRECTION.NORTH);
+    gameController.move(GameController.DIRECTION.N);
     updateStatus(gameController.getStatus());
   }
 
   @ShellMethod(value = "Move South", key = { "S", "s" }, group = "Move")
   @ShellMethodAvailability("startedCheck")
   public void moveSouth() {
-    gameController.move(GameController.DIRECTION.SOUTH);
+    gameController.move(GameController.DIRECTION.S);
     updateStatus(gameController.getStatus());
   }
 
   @ShellMethod(value = "Move East", key = { "E", "e" }, group = "Move")
   @ShellMethodAvailability("startedCheck")
   public void moveEast() {
-    gameController.move(GameController.DIRECTION.EAST);
+    gameController.move(GameController.DIRECTION.E);
     updateStatus(gameController.getStatus());
   }
 
   @ShellMethod(value = "Move West", key = { "W", "w" }, group = "Move")
   @ShellMethodAvailability("startedCheck")
   public void moveWest() {
-    gameController.move(GameController.DIRECTION.WEST);
+    gameController.move(GameController.DIRECTION.W);
     updateStatus(gameController.getStatus());
   }
 
