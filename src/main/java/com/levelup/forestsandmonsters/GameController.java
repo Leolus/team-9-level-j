@@ -11,6 +11,7 @@ public class GameController {
         // TODO: Add other status data
         public String characterName = DEFAULT_CHARACTER_NAME;
         public Point currentPosition;
+        public Object moveCount;
     }
 
     GameStatus status;
@@ -41,7 +42,11 @@ public class GameController {
     }
 
     public GameStatus getStatus() {
-        return this.status;
+        GameStatus snapshotStatus = new GameStatus();
+        snapshotStatus.characterName = this.status.characterName;
+        snapshotStatus.currentPosition = this.status.currentPosition;
+        snapshotStatus.moveCount = this.status.moveCount;
+        return snapshotStatus;
     }
 
     public void move(DIRECTION directionToMove) {
