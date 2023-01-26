@@ -27,7 +27,7 @@ public class LevelUpGame implements Quit.Command {
   }
 
   @ShellMethodAvailability("notStartedCheck")
-  @ShellMethod(value = "I see you have overcome your fear. What should we call you adventurer !! Create a character (characterName)", key = { "create-character", "create" })
+  @ShellMethod(value = "Create a character (characterName)", key = { "create-character", "create" })
   public void createCharacter(@ShellOption(defaultValue = "Character") String characterName) {
     gameController.createCharacter(characterName);
     GameStatus status = gameController.getStatus();
