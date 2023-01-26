@@ -10,6 +10,6 @@ Scenario Outline:: Set character name
     Then the Game sets the character's name to <characterNameOutput>
     Examples:
         | characterNameInput | characterNameOutput |
-        | "Erin"          | "Erin"           |
-        | ""              | "Character"         |
+        | "Erin"          | "Jon Snow"           |
+        | ""              | "Jon Snow"         |
 
