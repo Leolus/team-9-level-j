@@ -53,7 +53,4 @@ public class Character {
         moveCount++;
     }
 
-    public Object getMoveCount() {
-        return null;
-    }
 }
