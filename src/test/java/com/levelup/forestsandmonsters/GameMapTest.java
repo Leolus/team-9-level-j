@@ -47,7 +47,7 @@ public class GameMapTest {
 
         Position startingPosition = testObj.getPositions()[1][2];
         //Point expectedEndPositionCoordinates = new Point(1, 1);
-        Point expectedEndPositionCoordinates = new Point(2, 1);
+        Point expectedEndPositionCoordinates = new Point(2, 2);
         GameController.DIRECTION direction = GameController.DIRECTION.S;
 
         Position newPosition = testObj.calculatePosition(startingPosition, direction);
