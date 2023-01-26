@@ -25,11 +25,11 @@ public class Character {
     }
 
     public String getName() {
-        return Character.DEFAULT_NAME;
+        return name;
     }
 
     public void setName(String name){
-        Character.DEFAULT_NAME=name;
+        this.name=name;
     }
 
     //Instantiate GameMap obj

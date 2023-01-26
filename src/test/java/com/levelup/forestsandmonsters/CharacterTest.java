@@ -20,4 +20,11 @@ public class CharacterTest {
         c.enterMap(new GameMap());
         assertNotNull(c.getPosition());
     }
+
+    @Test
+    public void getMoveCountResults(){
+        Character character = new Character();
+        int moveCount = character.getMoveCount();
+        assertNotNull(moveCount);
+    }
 }
