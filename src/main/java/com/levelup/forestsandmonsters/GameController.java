@@ -12,7 +12,7 @@ public class GameController {
         // TODO: Add other status data
         public String characterName = DEFAULT_CHARACTER_NAME;
         public Point currentPosition;
-        public Object moveCount;
+        public int moveCount;
     }
 
     GameStatus status;
@@ -58,6 +58,9 @@ public class GameController {
     }
 
     public void setCharacterPosition(Point point) {
+    }
+
+    public void setCharacterPositionAndMoveCount(Point point, int startingMoveCount) {
     }
 
 }
