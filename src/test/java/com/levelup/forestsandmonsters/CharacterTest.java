@@ -17,6 +17,7 @@ public class CharacterTest {
     @Test
     public void getPosition(){
         Character c = new Character();
+        c.enterMap(new GameMap());
         assertNotNull(c.getPosition());
     }
 }
