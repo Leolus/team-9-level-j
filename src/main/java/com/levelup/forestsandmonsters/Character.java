@@ -27,4 +27,8 @@ public class Character {
 
     public void move(DIRECTION direction) {
     }
+
+    public Object getMoveCount() {
+        return null;
+    }
 }
