@@ -7,18 +7,24 @@ public class Character {
     public static String DEFAULT_NAME;
     String name;
 
-    public Character(){}
-
-    public Character(String name){
-        this.DEFAULT_NAME=name;
+    public Character() {
     }
 
-    public String getName(){
+    public Character(String name) {
+        this.DEFAULT_NAME = name;
+    }
+
+    public String getName() {
         return this.DEFAULT_NAME;
     }
 
-    public void enterMap(){}
-    
-    public void getPosition(){}
-    public move(DIRECTION direction){}
+    public void enterMap(GameMap gameMap) {
+    }
+
+    public Position getPosition() {
+        return null;
+    }
+
+    public void move(DIRECTION direction) {
+    }
 }
