@@ -30,16 +30,20 @@ public class GameMap {
         int calculatedY = startingPosition.coordinates.y;
 
         if(direction.equals(DIRECTION.NORTH)){
-            calculatedY = calculatedY + 1;
+          //  calculatedY = calculatedY + 1;
+              calculatedX = calculatedX + 1;
         }
         if(direction.equals(DIRECTION.SOUTH)){
-            calculatedY = calculatedY - 1;
+          //  calculatedY = calculatedY - 1;
+              calculatedX = calculatedX - 1;
         }
         if (direction.equals(DIRECTION.WEST)) {
-            calculatedX = calculatedX - 1;
+         //   calculatedX = calculatedX - 1;
+              calculatedY = calculatedY - 1;
         }
         if (direction.equals(DIRECTION.EAST)) {
-            calculatedX = calculatedX + 1;
+           // calculatedX = calculatedX + 1;
+              calculatedY = calculatedY + 1;
         }
 
         if(isPositionValid(new Point(calculatedX, calculatedY))){
