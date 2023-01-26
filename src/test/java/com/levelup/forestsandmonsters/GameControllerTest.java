@@ -9,10 +9,5 @@ public class GameControllerTest {
         GameController testObj = new GameController();
         assertNotNull(testObj.status);
     }
-
-    @Test
-    public void startGameResults(){
-        GameController gController = new GameController();
-        assertNo
-    }
+    
 }
