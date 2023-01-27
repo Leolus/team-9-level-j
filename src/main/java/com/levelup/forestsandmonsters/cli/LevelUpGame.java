@@ -42,8 +42,13 @@ public class LevelUpGame implements Quit.Command {
     gameController.startGame();
     // TODO: Update this prompt. Also, do you want to get the game status and tell
     // the character where their character is?
-    System.out.println("Welcome to Forests and Monsters! You have entered a mysterious place.");
-    System.out.println("Would you like to go North(N), South(S), East(E), West(W) or Exit(X)?");
+    System.out.println("Welcome to Ruin Runner! You are at the edge of the forest.");
+    System.out.println("Make your moves using the following options.");
+    System.out.println("(N) - Up");
+    System.out.println("(W) - Left");
+    System.out.println("(S) - Down");
+    System.out.println("(E) - Right");
+    System.out.println("(X) - Exit");
   }
 
   @ShellMethod(value = "Move North", key = { "N", "n" }, group = "Move")

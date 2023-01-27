@@ -25,7 +25,7 @@
                                                                                                 
                                   Developed by Level J
 ------------------------------------------------------------------------------------------------
-Have you overcome your fear and ready to be transported to the world of Ruins Runner?
+Have you overcome your fear and ready to be transported to the world of Ruin Runner?
 ------------------------------------------------------------------------------------------------
 type 'help' to see a list of commands
 ------------------------------------------------------------------------------------------------
