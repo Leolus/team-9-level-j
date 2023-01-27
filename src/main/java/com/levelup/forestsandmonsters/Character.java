@@ -6,7 +6,7 @@ import com.levelup.forestsandmonsters.GameController.DIRECTION;
 
 public class Character {
 
-    public static String DEFAULT_NAME = "Jon Snow";
+    public static String DEFAULT_NAME = "Thor";
     String name;
     GameMap map = null;
     Position currentPosition = null;
