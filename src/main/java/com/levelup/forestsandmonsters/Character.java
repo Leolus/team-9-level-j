@@ -4,21 +4,21 @@ import com.levelup.forestsandmonsters.GameController.DIRECTION;
 
 public class Character {
 
-    public static String DEFAULT_NAME="Jon Snow";
+    public static String DEFAULT_NAME = "Jon Snow";
     String name;
     GameMap map = null;
     Position currentPosition = null;
     int moveCount = 0;
+    String moveDirection;
 
-    //default constructor
+    // default constructor
     public Character() {
         this.name = DEFAULT_NAME;
     }
-    
 
-    //Constructor with String name
+    // Constructor with String name
     public Character(String name) {
-        if(name.trim().equals(""))
+        if (name.trim().equals(""))
             this.name = DEFAULT_NAME;
         else
             this.name = name;
@@ -28,12 +28,19 @@ public class Character {
         return name;
     }
 
-    public void setName(String name){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    //Instantiate GameMap obj
-    //GameMap gameMap = new GameMap();
+    public void setMoveDirection(String moveDirection) {
+        this.moveDirection = moveDirection;
+    }
+
+    // Instantiate GameMap obj
+    // GameMap gameMap = new GameMap();
+    public String getMoveDirection() {
+        return this.moveDirection;
+    }
 
     public void enterMap(GameMap map) {
         this.map = map;
@@ -50,6 +57,8 @@ public class Character {
 
     public void move(DIRECTION direction) {
         this.currentPosition = map.calculatePosition(this.currentPosition, direction);
+        this.moveDirection=direction.toString();
+        // System.out.println("Printing the directions data"+ direction.toString());
         moveCount++;
     }
 

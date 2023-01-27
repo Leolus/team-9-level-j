@@ -10,10 +10,11 @@ public class GameController {
         public String characterName;
         public Point currentPosition;
         public int moveCount;
+        public String moveDirection;
 
         @Override
         public String toString() {
-            return "Character " + characterName + " was on position " + currentPosition.x + "," + currentPosition.y + " at move count " + moveCount;
+            return "Character " + characterName + " was on position " + currentPosition.x + "," + currentPosition.y + " at move count " + moveCount+" after moving "+moveDirection;
         }
     }
 
@@ -43,6 +44,7 @@ public class GameController {
         this.status.characterName = this.character.name;
         this.status.currentPosition = this.character.getPosition().coordinates;
         this.status.moveCount = this.character.getMoveCount();
+        this.status.moveDirection=this.character.getMoveDirection();
     }
 
     public GameStatus getStatus() {
@@ -50,6 +52,7 @@ public class GameController {
         snapshotStatus.characterName = this.status.characterName;
         snapshotStatus.currentPosition = this.status.currentPosition;
         snapshotStatus.moveCount = this.status.moveCount;
+        snapshotStatus.moveDirection = this.status.moveDirection;
         return snapshotStatus;
     }
 
@@ -57,6 +60,7 @@ public class GameController {
         character.move(directionToMove);
         this.status.currentPosition = character.getPosition().coordinates;
         this.status.moveCount = character.getMoveCount();
+        this.status.moveDirection=character.getMoveDirection();
     }
 
     //Exists for testability. Is not a system operation.

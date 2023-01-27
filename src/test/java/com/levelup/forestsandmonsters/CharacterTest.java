@@ -27,4 +27,9 @@ public class CharacterTest {
         int moveCount = character.getMoveCount();
         assertNotNull(moveCount);
     }
-}
+
+//     @Test
+//     public void getMoveDirectionResults(){
+//         Character character = 
+//     }
+// }
