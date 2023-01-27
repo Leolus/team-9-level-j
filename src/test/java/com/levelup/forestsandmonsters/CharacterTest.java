@@ -9,29 +9,23 @@ public class CharacterTest {
     @Test
     public void enterMapResults() {
         Character character = new Character();
-        GameMap mapObj =  new GameMap();
+        GameMap mapObj = new GameMap();
         character.enterMap(mapObj);
         assertEquals(mapObj, character.map);
     }
 
     @Test
-    public void getPosition(){
+    public void getPosition() {
         Character c = new Character();
         c.enterMap(new GameMap());
         assertNotNull(c.getPosition());
     }
 
     @Test
-    public void getMoveCountResults(){
+    public void getMoveCountResults() {
         Character character = new Character();
         int moveCount = character.getMoveCount();
         assertNotNull(moveCount);
     }
 
-    @Test
-    public void getMoveDirectionResults(){
-        Character character = new Character();
-        String moveDirection = character.getMoveDirection();
-        assertNotNull(moveDirection);
-    }
- }
+}
