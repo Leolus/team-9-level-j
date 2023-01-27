@@ -32,4 +32,4 @@ public class CharacterTest {
 //     public void getMoveDirectionResults(){
 //         Character character = 
 //     }
-// }
+ }
