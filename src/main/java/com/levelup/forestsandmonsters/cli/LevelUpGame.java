@@ -1,7 +1,11 @@
 package com.levelup.forestsandmonsters.cli;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.swing.JSpinner.DefaultEditor;
 
 import com.levelup.forestsandmonsters.GameController;
 import com.levelup.forestsandmonsters.GameController.GameStatus;
@@ -19,7 +23,8 @@ public class LevelUpGame implements Quit.Command {
   private final GameController gameController;
   private List<GameStatus> gameHistory;
   private boolean isGameStarted = false;
-
+  Instant startTime;
+  Instant endTime;
   public LevelUpGame() {
     super();
     this.gameController = new GameController();
@@ -40,8 +45,6 @@ public class LevelUpGame implements Quit.Command {
   public void startGame() {
     isGameStarted = true;
     gameController.startGame();
-    // TODO: Update this prompt. Also, do you want to get the game status and tell
-    // the character where their character is?
     System.out.println("Welcome to Ruin Runner! You are at the edge of the forest.");
     System.out.println("Make your moves using the following options.");
     System.out.println("(N) - Up");
@@ -49,6 +52,7 @@ public class LevelUpGame implements Quit.Command {
     System.out.println("(S) - Down");
     System.out.println("(E) - Right");
     System.out.println("(X) - Exit");
+    startTime =Instant.now();
   }
 
   @ShellMethod(value = "Move North", key = { "N", "n" }, group = "Move")
@@ -83,16 +87,19 @@ public class LevelUpGame implements Quit.Command {
   public void endGame() {
     System.out.println("Thanks for being a wonderful explorer.");
     printSummary();
+    endTime =Instant.now();
+    long timeplayed = Duration.between(endTime,startTime).toSeconds();
+    System.out.println("Total Time Played" + timeplayed + " Seconds");
+    
     System.exit(0);
   }
 
   private void printSummary() {
     System.out.println("Exiting the mysterious land!");
     for (GameStatus status : gameHistory) {
-      // TODO: Override toString on game status to print pretty
       System.out.println(status);
+      
     }
-    // TODO: Print anything else you committed to in your mockup
   }
 
   private void updateStatus(GameStatus status) {
