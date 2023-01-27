@@ -28,8 +28,10 @@ public class CharacterTest {
         assertNotNull(moveCount);
     }
 
-//     @Test
-//     public void getMoveDirectionResults(){
-//         Character character = 
-//     }
+    @Test
+    public void getMoveDirectionResults(){
+        Character character = new Character();
+        String moveDirection = character.getMoveDirection();
+        assertNotNull(moveDirection);
+    }
  }

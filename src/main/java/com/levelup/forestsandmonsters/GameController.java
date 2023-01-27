@@ -61,6 +61,7 @@ public class GameController {
         this.status.currentPosition = character.getPosition().coordinates;
         this.status.moveCount = character.getMoveCount();
         this.status.moveDirection=character.getMoveDirection();
+        System.out.println(character.toString());
     }
 
     //Exists for testability. Is not a system operation.
@@ -78,5 +79,6 @@ public class GameController {
     public int getTotalPositions() {
         return this.map.getTotalPositions();
     }
+    
 
 }
